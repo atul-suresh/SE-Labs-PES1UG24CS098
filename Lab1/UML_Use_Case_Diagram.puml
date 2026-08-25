@@ -1,0 +1,37 @@
+@startuml
+
+left to right direction
+skinparam packageStyle rectangle
+
+actor "Vehicle Owner" as Owner
+actor "Parking Warden" as Warden
+
+rectangle "Smart Parking Space Rental & License Validator" {
+
+    usecase "View Available\nParking Bays" as UC1
+    usecase "Reserve Parking Bay" as UC2
+    usecase "Validate Vehicle\nReservation" as UC3
+    usecase "Verify License Plate" as UC4
+    usecase "Record Vehicle Entry" as UC5
+    usecase "Record Vehicle Exit" as UC6
+    usecase "Calculate Parking Fee" as UC7
+    usecase "Monitor Parking\nSession" as UC8
+    usecase "Flag Unauthorized\nOverstay" as UC9
+    usecase "Review Overstay Alert" as UC10
+}
+
+Owner -- UC1
+Owner -- UC2
+Owner -- UC3
+Owner -- UC5
+Owner -- UC6
+
+Warden -- UC8
+Warden -- UC10
+
+UC3 ..> UC4 : <<include>>
+UC6 ..> UC7 : <<include>>
+
+UC9 ..> UC8 : <<extend>>
+
+@enduml
