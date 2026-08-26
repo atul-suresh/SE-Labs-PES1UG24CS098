@@ -15,7 +15,8 @@
 #text(size: 10.5pt)[SRN: PES1UG24CS098]
 #linebreak()
 #text(size: 10.5pt)[Section: B]
-
+#linebreak()
+#text(size: 10pt)[Jira Project: https://atulsuresh30.atlassian.net/jira/software/c/projects/SPS/boards/3]
 #v(10pt)
 
 = 1. EPICs
