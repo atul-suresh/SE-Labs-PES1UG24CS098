@@ -7,3 +7,4 @@ This repository contains the deliverables for Software Engineering laboratory ex
 ## Labs
 
 - [Lab 1 - Requirements Engineering & UML Use-Case Modelling](./Lab1/)
+- [Lab 2 - Agile Backlog Creation & Sprint Simulation in Jira](Lab2/)
