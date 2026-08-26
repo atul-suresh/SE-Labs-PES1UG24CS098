@@ -1,0 +1,9 @@
+{
+  "assigneeType": "PROJECT_LEAD",
+  "description": "Smart Parking Space Rental and License Validator - Agile backlog creation and sprint simulation for Software Engineering Lab 2.",
+  "key": "SPS",
+  "leadAccountEmail": "atulsuresh30@gmail.com",
+  "name": "Smart Parking System",
+  "projectTemplateKey": "com.pyxis.greenhopper.jira:gh-simplified-scrum-classic",
+  "projectTypeKey": "software"
+}
