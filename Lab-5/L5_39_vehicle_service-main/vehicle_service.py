@@ -6,7 +6,7 @@ import shutil
 from datetime import date
 
 SERVICE_RATES = {"Oil Change": 1500, "Wheel Alignment": 800,
-                 "General": 2500,"Brake Check": 1200}
+                 "General": 2500, "Brake Check": 1200}
 service_records = {}
 
 
@@ -48,11 +48,12 @@ def job_card_id(vehicle_no):
 
 def busiest_vehicle():
     """Return the vehicle with the most jobs, or None when no records exist."""
-    best=None
+    best = None
     for vehicle, jobs in service_records.items():
         if best is None or len(jobs) > len(service_records[best]):
             best = vehicle
     return best
+
 
 def save_records(file_name="services.json"):
     """Save the current service records as UTF-8 JSON."""
@@ -86,7 +87,10 @@ def main():
     print("Job card for KA01AB1234:", job_card_id("KA01AB1234"))
     save_records()
     loaded = load_records()
-    print("Vehicles on file:", len(loaded), "| busiest vehicle:", busiest_vehicle())
+    print(
+        "Vehicles on file:", len(loaded),
+        "| busiest vehicle:", busiest_vehicle(),
+    )
 
 
 main()
