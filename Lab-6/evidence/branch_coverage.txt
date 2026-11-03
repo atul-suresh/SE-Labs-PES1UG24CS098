@@ -1,0 +1,23 @@
+============================= test session starts ==============================
+platform linux -- Python 3.12.14, pytest-9.2.0, pluggy-1.7.0
+rootdir: /workspace/scratch/3a64daa2bd86/se-labs/Lab-6
+configfile: pytest.ini
+plugins: cov-7.1.0
+collected 12 items
+
+test_branch_coverage.py ............                                     [100%]
+
+================================ tests coverage ================================
+_______________ coverage: platform linux, python 3.12.14-final-0 _______________
+
+Name                 Stmts   Miss Branch BrPart  Cover   Missing
+----------------------------------------------------------------
+password_policy.py      47      0     36      0   100%
+----------------------------------------------------------------
+TOTAL                   47      0     36      0   100%
+Coverage JSON written to file evidence/branch_coverage.json
+Required test coverage of 90% reached. Total coverage: 100.00%
+============================== 12 passed in 0.05s ==============================
+Line coverage:   47/47 (100.00%)
+Branch coverage: 36/36 (100.00%)
+90% minimum: PASS
